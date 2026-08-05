@@ -18,5 +18,16 @@
     "abort": {
       "already_configured": "This Cradlewise account token is already configured."
     }
+  },
+  "entity": {
+    "binary_sensor": {
+      "is_in_crib": {
+        "name": "Cradlewise Baby in Crib",
+        "state": {
+          "on": "In Crib",
+          "off": "Out of Crib"
+        }
+      }
+    }
   }
 }
