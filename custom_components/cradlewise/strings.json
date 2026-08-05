@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Cradlewise Integration Setup",
+        "description": "Enter your Cradlewise Data API Bearer Token generated from the Cradlewise Web Dashboard.",
+        "data": {
+          "api_token": "Bearer Token"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Cradlewise API.",
+      "invalid_auth": "Invalid or expired Bearer Token (401/403). Ensure Nurture Plus is active.",
+      "rate_limited": "API Rate limit exceeded (429). Try again later.",
+      "unknown": "Unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This Cradlewise account token is already configured."
+    }
+  }
+}
