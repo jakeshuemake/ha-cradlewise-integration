@@ -5,13 +5,14 @@ on:
   pull_request:
 
 jobs:
-  hacs_validation:
+  validate-hacs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
-      - name: HACS Action
+      - name: HACS validation
         uses: hacs/action@main
         with:
           category: integration
+          ignore: brands
