@@ -7,6 +7,20 @@
         "data": {
           "api_token": "Bearer Token"
         }
+      },
+      "reconfigure": {
+        "title": "Update Cradlewise Bearer Token",
+        "description": "Enter your new Cradlewise API token. All existing entities, dashboards, and automations will stay intact.",
+        "data": {
+          "api_token": "New Bearer Token"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Cradlewise Token Expired",
+        "description": "Your 60-day Cradlewise token has expired. Paste your newly generated token below to resume connection.",
+        "data": {
+          "api_token": "New Bearer Token"
+        }
       }
     },
     "error": {
@@ -16,7 +30,9 @@
       "unknown": "Unexpected error occurred."
     },
     "abort": {
-      "already_configured": "This Cradlewise account token is already configured."
+      "already_configured": "This Cradlewise account token is already configured.",
+      "reauth_successful": "Token updated successfully. Connection restored.",
+      "reconfigure_successful": "Token updated successfully."
     }
   },
   "entity": {
